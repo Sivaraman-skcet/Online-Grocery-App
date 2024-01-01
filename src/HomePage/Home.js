@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import NavBar from "./NavBar";
+import ProductList from "../Product/ProductList";
 function Home() {
-  return (
-    <div>Home</div>
-  )
+  return <div>
+    <NavBar/>
+    <ProductList/>
+  </div>;
 }
 
-export default Home
+export default Home;

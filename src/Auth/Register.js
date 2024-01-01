@@ -158,7 +158,7 @@ export default function SignInSide() {
                     onChange={handleChange}
                     autoComplete="email"
                   />
-                  {errors.email && <p className="error">{errors.email}</p>}
+                  <div>{errors.email && <p className="error">{errors.email}</p>}</div>
                 </Grid>
                 <Grid item xs={12}>
                   <TextField
@@ -172,7 +172,7 @@ export default function SignInSide() {
                     onChange={handleChange}
                     autoComplete="new-password"
                   />
-                   {errors.password && <p className="error">{errors.password}</p>}
+                   <div>{errors.password && <p className="error">{errors.password}</p>}</div>
                 </Grid>
                 <Grid item xs={12}>
                   <FormControlLabel

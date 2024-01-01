@@ -1,0 +1,8 @@
+.item{
+    display: inline-flex;
+    gap: 50px;
+}
+.apple,.orange,.kiwi{
+    border: solid black 1px;
+    background-color: rgb(246, 242, 242);
+}

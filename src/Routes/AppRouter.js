@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from "../Auth/Login"
 import Register from '../Auth/Register'
 import Home  from '../HomePage/Home';
+import CartList from '../Cart/CartList';
 function AppRouter() {
   return (
     <Router>
@@ -11,6 +12,7 @@ function AppRouter() {
             <Route path='/' Component={Register}/>
             <Route path='/login' Component={Login}/>
             <Route path='/home' Component={Home}/>
+            <Route path='/cart' Component={CartList}/>
        
        </Routes>
     </Router>

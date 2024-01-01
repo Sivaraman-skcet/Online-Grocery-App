@@ -153,7 +153,9 @@ export default function SignInSide() {
                 onChange={handleChange}
                 autoFocus
               />
+              <div>
               {errors.email && <p className="error">{errors.email}</p>}
+              </div>
               <TextField
                 margin="normal"
                 required
@@ -166,7 +168,9 @@ export default function SignInSide() {
                 onChange={handleChange}
                 autoComplete="current-password"
               />
+              <div>
               {errors.password && <p className="error">{errors.password}</p>}
+              </div>
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
